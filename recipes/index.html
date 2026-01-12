@@ -1,1 +1,149 @@
-testing
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recipes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #2563eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      padding: 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    a.card {
+      display: block;
+      background: var(--card);
+      border-radius: 12px;
+      padding: 16px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    a.card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .emoji {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .filename {
+      margin-top: 6px;
+      font-size: 12px;
+      color: var(--muted);
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍽️ Recipe Index</h1>
+    <p>Click any card to open the recipe</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <a class="card" href="anabolic-parmy.html"><div class="emoji">🍗</div><div class="title">Anabolic Parmy</div></a>
+      <a class="card" href="balsamic-chicken-sanga.html"><div class="emoji">🥪</div><div class="title">Balsamic Chicken Sanga</div></a>
+      <a class="card" href="bbq-meat-lovers-pizza.html"><div class="emoji">🍕</div><div class="title">BBQ Meat Lovers Pizza</div></a>
+      <a class="card" href="beef-nachos.html"><div class="emoji">🌮</div><div class="title">Beef Nachos</div></a>
+      <a class="card" href="biscoff-french-toast.html"><div class="emoji">🍞</div><div class="title">Biscoff French Toast</div></a>
+      <a class="card" href="biscoff-lava-cake.html"><div class="emoji">🍰</div><div class="title">Biscoff Lava Cake</div></a>
+      <a class="card" href="biscoff-weetbix.html"><div class="emoji">🥣</div><div class="title">Biscoff Weet-Bix</div></a>
+      <a class="card" href="brekky-burger.html"><div class="emoji">🍔</div><div class="title">Brekky Burger</div></a>
+      <a class="card" href="brekky-pizza.html"><div class="emoji">🍕</div><div class="title">Brekky Pizza</div></a>
+      <a class="card" href="buffalo-chicken-mac-and-cheese.html"><div class="emoji">🧀</div><div class="title">Buffalo Chicken Mac & Cheese</div></a>
+      <a class="card" href="cadbury-skillet-cookie.html"><div class="emoji">🍪</div><div class="title">Cadbury Skillet Cookie</div></a>
+      <a class="card" href="caramilk-baked-oats.html"><div class="emoji">🥣</div><div class="title">Caramilk Baked Oats</div></a>
+      <a class="card" href="cheesy-brekky-burger.html"><div class="emoji">🧀</div><div class="title">Cheesy Brekky Burger</div></a>
+      <a class="card" href="chicken-gyros.html"><div class="emoji">🥙</div><div class="title">Chicken Gyros</div></a>
+      <a class="card" href="chicken-parmy-sanga.html"><div class="emoji">🥪</div><div class="title">Chicken Parmy Sanga</div></a>
+      <a class="card" href="chicken-pesto-pasta.html"><div class="emoji">🍝</div><div class="title">Chicken Pesto Pasta</div></a>
+      <a class="card" href="chili-garlic-prawn-bowl.html"><div class="emoji">🍤</div><div class="title">Chili Garlic Prawn Bowl</div></a>
+      <a class="card" href="chipotle-queso-loaded-fries.html"><div class="emoji">🍟</div><div class="title">Chipotle Queso Loaded Fries</div></a>
+      <a class="card" href="chocolate-chunk-sundae.html"><div class="emoji">🍨</div><div class="title">Chocolate Chunk Sundae</div></a>
+      <a class="card" href="chocolate-crepes.html"><div class="emoji">🥞</div><div class="title">Chocolate Crêpes</div></a>
+      <a class="card" href="creamy-nandos-pasta.html"><div class="emoji">🍝</div><div class="title">Creamy Nando’s Pasta</div></a>
+      <a class="card" href="double-smash-burger.html"><div class="emoji">🍔</div><div class="title">Double Smash Burger</div></a>
+      <a class="card" href="folded-omelette-bagel.html"><div class="emoji">🥯</div><div class="title">Folded Omelette Bagel</div></a>
+      <a class="card" href="fruit-and-cereal-bowl.html"><div class="emoji">🍓</div><div class="title">Fruit & Cereal Bowl</div></a>
+      <a class="card" href="greek-turkey-burger.html"><div class="emoji">🇬🇷</div><div class="title">Greek Turkey Burger</div></a>
+      <a class="card" href="haloumi-and-roast-pumpkin-salad.html"><div class="emoji">🥗</div><div class="title">Haloumi & Roast Pumpkin Salad</div></a>
+      <a class="card" href="hoisin-beef-noodles-4-servings.html"><div class="emoji">🍜</div><div class="title">Hoisin Beef Noodles</div></a>
+      <a class="card" href="italian-baked-eggs.html"><div class="emoji">🍳</div><div class="title">Italian Baked Eggs</div></a>
+      <a class="card" href="kfc-zinger-stacker.html"><div class="emoji">🔥</div><div class="title">Zinger Stacker</div></a>
+      <a class="card" href="kung-pao-chicken-5-servings.html"><div class="emoji">🥡</div><div class="title">Kung Pao Chicken</div></a>
+      <a class="card" href="lazy-parmy-sanga.html"><div class="emoji">😌</div><div class="title">Lazy Parmy Sanga</div></a>
+      <a class="card" href="loaded-sweet-potatoes-per-serve-makes-4.html"><div class="emoji">🍠</div><div class="title">Loaded Sweet Potatoes</div></a>
+      <a class="card" href="mac-and-cheese.html"><div class="emoji">🧀</div><div class="title">Mac & Cheese</div></a>
+      <a class="card" href="meatball-pasta-bake-4-servings.html"><div class="emoji">🍝</div><div class="title">Meatball Pasta Bake</div></a>
+      <a class="card" href="mini-apple-crumble.html"><div class="emoji">🍎</div><div class="title">Mini Apple Crumble</div></a>
+      <a class="card" href="miso-chicken-rice-bowl-makes-5-serves.html"><div class="emoji">🍚</div><div class="title">Miso Chicken Rice Bowl</div></a>
+      <a class="card" href="nutella-donuts-6-servings-per-serve.html"><div class="emoji">🍩</div><div class="title">Nutella Donuts</div></a>
+      <a class="card" href="nutella-protein-balls-9-servings-per-serve.html"><div class="emoji">⚡</div><div class="title">Nutella Protein Balls</div></a>
+      <a class="card" href="oreo-protein-shake.html"><div class="emoji">🥤</div><div class="title">Oreo Protein Shake</div></a>
+      <a class="card" href="overnight-oats.html"><div class="emoji">🌙</div><div class="title">Overnight Oats</div></a>
+      <a class="card" href="pb-and-j-toasted-sanga.html"><div class="emoji">🥜</div><div class="title">PB & J Toasted Sanga</div></a>
+      <a class="card" href="philly-cheese-steak.html"><div class="emoji">🥩</div><div class="title">Philly Cheese Steak</div></a>
+      <a class="card" href="protein-iced-coffee.html"><div class="emoji">☕</div><div class="title">Protein Iced Coffee</div></a>
+      <a class="card" href="scrambled-egg-and-smoked-salmon-bagel.html"><div class="emoji">🐟</div><div class="title">Egg & Smoked Salmon Bagel</div></a>
+      <a class="card" href="shakshuka.html"><div class="emoji">🍅</div><div class="title">Shakshuka</div></a>
+      <a class="card" href="sticky-bbq-chicken.html"><div class="emoji">🍖</div><div class="title">Sticky BBQ Chicken</div></a>
+      <a class="card" href="teriyaki-chicken-bowl.html"><div class="emoji">🍱</div><div class="title">Teriyaki Chicken Bowl</div></a>
+      <a class="card" href="teriyaki-salmon-bites.html"><div class="emoji">🐟</div><div class="title">Teriyaki Salmon Bites</div></a>
+      <a class="card" href="the-buff-mac.html"><div class="emoji">💪</div><div class="title">The Buff Mac</div></a>
+      <a class="card" href="vermicelli-chicken-noodle-salad.html"><div class="emoji">🥗</div><div class="title">Vermicelli Chicken Noodle Salad</div></a>
+      <a class="card" href="vietnamese-beef-salad-serves-4.html"><div class="emoji">🇻🇳</div><div class="title">Vietnamese Beef Salad</div></a>
+      <a class="card" href="weeknight-potato-gnocci.html"><div class="emoji">🥔</div><div class="title">Weeknight Potato Gnocci</div></a>
+    </div>
+  </main>
+</body>
+</html>
