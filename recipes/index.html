@@ -1,81 +1,913 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Recipe Index</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Index</title>
 
-<style>
-  body { margin: 0; font-family: system-ui; background: #f6f7f9; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-  a.card { background: white; border-radius: 12px; }
-</style>
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="manifest" href="site.webmanifest">
-</head><body>
-<h1>Recipe Index</h1>
-<p class="small">Each link opens an individual HTML recipe page (ingredients + steps + macros per serving).</p>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
-<h2>Breakfast</h2><ul>
-<li><a href="biscoff-french-toast.html">Biscoff French Toast</a> <span class="small">— 396 kcal • 13P/14F/50C • 10 min</span></li>
-<li><a href="biscoff-weetbix.html">Biscoff Weetbix</a> <span class="small">— 488 kcal • 26P/9F/72C • 5 min</span></li>
-<li><a href="brekky-burger.html">Brekky Burger</a> <span class="small">— 349 kcal • 40P/5F/32C • 4 min</span></li>
-<li><a href="brekky-pizza.html">Brekky Pizza</a> <span class="small">— 391 kcal • 33P/8F/46C • 10 min</span></li>
-<li><a href="caramilk-baked-oats.html">Caramilk Baked Oats</a> <span class="small">— 463 kcal • 15P/17F/58C • 10 min</span></li>
-<li><a href="fruit-and-cereal-bowl.html">Fruit and Cereal Bowl</a> <span class="small">— 449 kcal • 60P/3F/45C • 5 min</span></li>
-<li><a href="italian-baked-eggs.html">Italian Baked Eggs</a> <span class="small">— 457 kcal • 39P/30F/45C • 15 min</span></li>
-<li><a href="overnight-oats.html">Overnight Oats</a> <span class="small">— 391 kcal • 33P/8F/46C • 5 min</span></li>
-<li><a href="scrambled-egg-and-smoked-salmon-bagel.html">Scrambled Egg and Smoked Salmon Bagel</a> <span class="small">— 532 kcal • 31P/21F/50C • 10 min</span></li>
-<li><a href="shakshuka.html">Shakshuka</a> <span class="small">— 493 kcal • 30P/24F/32C • 30 min</span></li>
-</ul>
-<h2>Lunch / Meal Prep</h2><ul>
-<li><a href="buffalo-chicken-mac-and-cheese.html">Buffalo Chicken Mac &amp; Cheese</a> <span class="small">— 380 kcal • 38P/11F/37C • 15 min</span></li>
-<li><a href="chicken-pesto-pasta.html">Chicken Pesto Pasta</a> <span class="small">— 480 kcal • 51P/10F/44C • 35 min</span></li>
-<li><a href="chili-garlic-prawn-bowl.html">Chili Garlic Prawn Bowl</a> <span class="small">— 468 kcal • 37P/11F/52C • 2 min</span></li>
-<li><a href="creamy-nandos-pasta.html">Creamy Nandos Pasta</a> <span class="small">— 417 kcal • 50P/4F/44C • 35 min</span></li>
-<li><a href="hoisin-beef-noodles-4-servings.html">Hoisin Beef Noodles 4 Servings</a> <span class="small">— 323 kcal • 32P/10F/17C • 6 min</span></li>
-<li><a href="kung-pao-chicken-5-servings.html">Kung Pao Chicken 5 Servings</a> <span class="small">— 340 kcal • 32P/6F/35C • 30 min</span></li>
-<li><a href="mac-and-cheese.html">Mac &amp; Cheese</a> <span class="small">— 485 kcal • 44P/16F/47C • 35 min</span></li>
-<li><a href="meatball-pasta-bake-4-servings.html">Meatball Pasta Bake (4 Servings)</a> <span class="small">— 454 kcal • 50P/10F/38C • 25 min</span></li>
-<li><a href="miso-chicken-rice-bowl-makes-5-serves.html">Miso Chicken Rice Bowl Makes 5 serves</a> <span class="small">— 570 kcal • 55P/12F/57C • 30 min</span></li>
-<li><a href="teriyaki-chicken-bowl.html">Teriyaki Chicken Bowl</a> <span class="small">— 464 kcal • 40P/10F/47C • 10 min</span></li>
-<li><a href="vietnamese-beef-salad-serves-4.html">Vietnamese Beef Salad Serves 4</a> <span class="small">— 396 kcal • 32P/11F/38C • 30 min</span></li>
-</ul>
-<h2>Dinner</h2><ul>
-<li><a href="anabolic-parmy.html">Anabolic Parmy</a> <span class="small">— 378 kcal • 54P/7F/53C • 20 min</span></li>
-<li><a href="bbq-meat-lovers-pizza.html">BBQ Meat Lovers Pizza</a> <span class="small">— 490 kcal • 41P/15F/44C • 5 min</span></li>
-<li><a href="beef-nachos.html">Beef Nachos</a> <span class="small">— 491 kcal • 49P/6F/53C • 3 min</span></li>
-<li><a href="chicken-gyros.html">Chicken Gyros</a> <span class="small">— 491 kcal • 49P/6F/53C • 17 min</span></li>
-<li><a href="greek-turkey-burger.html">Greek Turkey Burger</a> <span class="small">— 349 kcal • 40P/5F/32C • 20 min</span></li>
-<li><a href="haloumi-and-roast-pumpkin-salad.html">Haloumi &amp; Roast Pumpkin Salad</a> <span class="small">— 395 kcal • 15P/23F/37C • 20 min</span></li>
-<li><a href="loaded-sweet-potatoes-per-serve-makes-4.html">Loaded Sweet Potatoes (per serve, makes 4)</a> <span class="small">— 356 kcal • 33P/13F/26C • 15 min</span></li>
-<li><a href="sticky-bbq-chicken.html">Sticky BBQ Chicken</a> <span class="small">— 391 kcal • 50P/6F/29C • 15 min</span></li>
-<li><a href="teriyaki-salmon-bites.html">Teriyaki Salmon Bites</a> <span class="small">— 456 kcal • 32P/19F/34C • 10 min</span></li>
-<li><a href="the-buff-mac.html">The Buff Mac</a> <span class="small">— 435 kcal • 47P/14F/25C • 15 min</span></li>
-<li><a href="vermicelli-chicken-noodle-salad.html">Vermicelli Chicken Noodle Salad</a> <span class="small">— 477 kcal • 27P/6F/72C • 30 min</span></li>
-<li><a href="weeknight-potato-gnocci.html">Weeknight Potato Gnocci</a> <span class="small">— 482 kcal • 15P/13F/76C • 15 min</span></li>
-</ul>
-<h2>Dessert</h2><ul>
-<li><a href="biscoff-lava-cake.html">Biscoff Lava Cake</a> <span class="small">— 379 kcal • 36P/12F/33C • 2 min</span></li>
-<li><a href="cadbury-skillet-cookie.html">Cadbury Skillet Cookie</a> <span class="small">— 260 kcal • 6P/13F/32C • 14 min</span></li>
-<li><a href="chocolate-chunk-sundae.html">Chocolate Chunk Sundae</a> <span class="small">— 395 kcal • 15P/23F/37C • 3 min</span></li>
-<li><a href="chocolate-crepes.html">Chocolate Crepes</a> <span class="small">— 397 kcal • 38P/10F/37C • 5 min</span></li>
-<li><a href="mini-apple-crumble.html">Mini Apple Crumble</a> <span class="small">— 120 kcal • 1P/2F/27C • 30 min</span></li>
-<li><a href="nutella-donuts-6-servings-per-serve.html">Nutella Donuts 6 servings (per serve)</a> <span class="small">— 126 kcal • 4P/6F/13C • 15 min</span></li>
-<li><a href="nutella-protein-balls-9-servings-per-serve.html">Nutella Protein Balls 9 Servings (per serve)</a> <span class="small">— 103 kcal • 7P/4F/8C • 10 min</span></li>
-<li><a href="oreo-protein-shake.html">Oreo Protein Shake</a> <span class="small">— 305 kcal • 35P/9F/35C • 2 min</span></li>
-<li><a href="pb-and-j-toasted-sanga.html">PB &amp; J Toasted Sanga</a> <span class="small">— 340 kcal • 24P/7F/48C • 5 min</span></li>
-<li><a href="protein-iced-coffee.html">Protein Iced Coffee</a> <span class="small">— 138 kcal • 26P/2F/4C • 5 min</span></li>
-</ul>
-<h2>15 minutes or less</h2><ul>
-<li><a href="balsamic-chicken-sanga.html">Balsamic Chicken Sanga</a> <span class="small">— 483 kcal • 44P/14F/46C • 15 min</span></li>
-<li><a href="cheesy-brekky-burger.html">Cheesy Brekky Burger</a> <span class="small">— 422 kcal • 39P/13F/26C • 15 min</span></li>
-<li><a href="chicken-parmy-sanga.html">Chicken Parmy Sanga</a> <span class="small">— 670 kcal • 67P/16F/55C • 20 min</span></li>
-<li><a href="chipotle-queso-loaded-fries.html">Chipotle Queso Loaded Fries</a> <span class="small">— 675 kcal • 42P/42F/36C • 15 min</span></li>
-<li><a href="double-smash-burger.html">Double Smash Burger</a> <span class="small">— 670 kcal • 67P/16F/55C • 20 min</span></li>
-<li><a href="folded-omelette-bagel.html">Folded Omelette Bagel</a> <span class="small">— 571 kcal • 45P/19F/54C • 20 min</span></li>
-<li><a href="kfc-zinger-stacker.html">KFC Zinger Stacker</a> <span class="small">— 582 kcal • 78P/11F/51C • 18 min</span></li>
-<li><a href="lazy-parmy-sanga.html">Lazy Parmy Sanga</a> <span class="small">— 445 kcal • 38P/20F/26C • 6 min</span></li>
-<li><a href="philly-cheese-steak.html">Philly Cheese Steak</a> <span class="small">— 739 kcal • 49P/38F/49C • 10 min</span></li>
-</ul>
-</body></html>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --shadow: 0 8px 24px rgba(0,0,0,.08);
+      --shadow2: 0 12px 34px rgba(0,0,0,.10);
+      --radius:16px;
+      --max:1200px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 16px 60px;
+    }
+
+    /* Hero */
+    .hero{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      padding: 18px 18px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.75);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+      animation: fadeUp .5s ease both;
+    }
+    .hero img{
+      width:72px;
+      height:72px;
+      border-radius: 18px;
+      box-shadow: 0 10px 26px rgba(0,0,0,.12);
+      transform: translateZ(0);
+      animation: floaty 3.8s ease-in-out infinite;
+    }
+    .hero h1{
+      margin:0;
+      font-size: 40px;
+      letter-spacing: -0.5px;
+      line-height:1.05;
+    }
+    .hero p{
+      margin:6px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* Section headings */
+    .section{
+      margin-top: 26px;
+      animation: fadeUp .55s ease both;
+    }
+    .section h2{
+      margin: 22px 4px 12px;
+      font-size: 26px;
+      letter-spacing: -0.3px;
+    }
+
+    /* Multi-column recipe cards */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .card{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 14px 14px 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.06);
+      border: 1px solid rgba(17,24,39,.06);
+      transform: translateY(0);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      position: relative;
+      overflow:hidden;
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:-40% -40% auto auto;
+      width:140px;
+      height:140px;
+      background: radial-gradient(circle at 30% 30%, rgba(37,99,235,.18), rgba(37,99,235,0) 60%);
+      transform: rotate(18deg);
+      pointer-events:none;
+    }
+    .card:hover{
+      transform: translateY(-3px);
+      box-shadow: var(--shadow2);
+      border-color: rgba(37,99,235,.25);
+    }
+    .topline{
+      display:flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .title{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    .time{
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .meta{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      border: 1px solid rgba(17,24,39,.08);
+      background: rgba(17,24,39,.03);
+      color: #111827;
+    }
+    .chip.kcal{
+      background: rgba(245,158,11,.10);
+      border-color: rgba(245,158,11,.25);
+    }
+    .chip.p{
+      background: rgba(16,185,129,.10);
+      border-color: rgba(16,185,129,.25);
+    }
+    .chip.f{
+      background: rgba(239,68,68,.10);
+      border-color: rgba(239,68,68,.22);
+    }
+    .chip.c{
+      background: rgba(59,130,246,.10);
+      border-color: rgba(59,130,246,.22);
+    }
+
+    .hint{
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @keyframes fadeUp{
+      from{ opacity:0; transform: translateY(10px); }
+      to{ opacity:1; transform: translateY(0); }
+    }
+    @keyframes floaty{
+      0%,100%{ transform: translateY(0); }
+      50%{ transform: translateY(-4px); }
+    }
+
+    @media (max-width:520px){
+      .hero h1{ font-size: 32px; }
+      .hero img{ width:62px; height:62px; border-radius: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <img src="android-chrome-512x512.png" alt="Recipe icon" />
+      <div>
+        <h1>Recipe Index</h1>
+        <p>Each card opens an individual HTML recipe page (ingredients + steps + macros per serving).</p>
+      </div>
+    </header>
+
+    <!-- Breakfast -->
+    <section class="section">
+      <h2>🍳 Breakfast</h2>
+      <div class="grid">
+        <a class="card" href="biscoff-french-toast.html">
+          <div class="topline">
+            <div class="title">🍞 Biscoff French Toast</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 396 kcal</span>
+            <span class="chip p">💪 13P</span>
+            <span class="chip f">🧈 14F</span>
+            <span class="chip c">🍚 50C</span>
+          </div>
+        </a>
+
+        <a class="card" href="biscoff-weetbix.html">
+          <div class="topline">
+            <div class="title">🥣 Biscoff Weet-Bix</div>
+            <div class="time">⏱️ 5 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 488 kcal</span>
+            <span class="chip p">💪 26P</span>
+            <span class="chip f">🧈 9F</span>
+            <span class="chip c">🍚 72C</span>
+          </div>
+        </a>
+
+        <a class="card" href="brekky-burger.html">
+          <div class="topline">
+            <div class="title">🍔 Brekky Burger</div>
+            <div class="time">⏱️ 4 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 349 kcal</span>
+            <span class="chip p">💪 40P</span>
+            <span class="chip f">🧈 5F</span>
+            <span class="chip c">🍚 32C</span>
+          </div>
+        </a>
+
+        <a class="card" href="brekky-pizza.html">
+          <div class="topline">
+            <div class="title">🍕 Brekky Pizza</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 391 kcal</span>
+            <span class="chip p">💪 33P</span>
+            <span class="chip f">🧈 8F</span>
+            <span class="chip c">🍚 46C</span>
+          </div>
+        </a>
+
+        <a class="card" href="caramilk-baked-oats.html">
+          <div class="topline">
+            <div class="title">🥣 Caramilk Baked Oats</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 463 kcal</span>
+            <span class="chip p">💪 15P</span>
+            <span class="chip f">🧈 17F</span>
+            <span class="chip c">🍚 58C</span>
+          </div>
+        </a>
+
+        <a class="card" href="fruit-and-cereal-bowl.html">
+          <div class="topline">
+            <div class="title">🍓 Fruit & Cereal Bowl</div>
+            <div class="time">⏱️ 5 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 449 kcal</span>
+            <span class="chip p">💪 60P</span>
+            <span class="chip f">🧈 3F</span>
+            <span class="chip c">🍚 45C</span>
+          </div>
+        </a>
+
+        <a class="card" href="italian-baked-eggs.html">
+          <div class="topline">
+            <div class="title">🍳 Italian Baked Eggs</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 457 kcal</span>
+            <span class="chip p">💪 39P</span>
+            <span class="chip f">🧈 30F</span>
+            <span class="chip c">🍚 45C</span>
+          </div>
+        </a>
+
+        <a class="card" href="overnight-oats.html">
+          <div class="topline">
+            <div class="title">🌙 Overnight Oats</div>
+            <div class="time">⏱️ 5 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 391 kcal</span>
+            <span class="chip p">💪 33P</span>
+            <span class="chip f">🧈 8F</span>
+            <span class="chip c">🍚 46C</span>
+          </div>
+        </a>
+
+        <a class="card" href="scrambled-egg-and-smoked-salmon-bagel.html">
+          <div class="topline">
+            <div class="title">🥯 Scrambled Egg & Smoked Salmon Bagel</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 532 kcal</span>
+            <span class="chip p">💪 31P</span>
+            <span class="chip f">🧈 21F</span>
+            <span class="chip c">🍚 50C</span>
+          </div>
+        </a>
+
+        <a class="card" href="shakshuka.html">
+          <div class="topline">
+            <div class="title">🍅 Shakshuka</div>
+            <div class="time">⏱️ 30 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 493 kcal</span>
+            <span class="chip p">💪 30P</span>
+            <span class="chip f">🧈 24F</span>
+            <span class="chip c">🍚 32C</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Lunch / Meal Prep -->
+    <section class="section">
+      <h2>🥗 Lunch / Meal Prep</h2>
+      <div class="grid">
+        <a class="card" href="buffalo-chicken-mac-and-cheese.html">
+          <div class="topline">
+            <div class="title">🌶️ Buffalo Chicken Mac & Cheese</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 380 kcal</span>
+            <span class="chip p">💪 38P</span>
+            <span class="chip f">🧈 11F</span>
+            <span class="chip c">🍚 37C</span>
+          </div>
+        </a>
+
+        <a class="card" href="chicken-pesto-pasta.html">
+          <div class="topline">
+            <div class="title">🍝 Chicken Pesto Pasta</div>
+            <div class="time">⏱️ 35 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 480 kcal</span>
+            <span class="chip p">💪 51P</span>
+            <span class="chip f">🧈 10F</span>
+            <span class="chip c">🍚 44C</span>
+          </div>
+        </a>
+
+        <a class="card" href="chili-garlic-prawn-bowl.html">
+          <div class="topline">
+            <div class="title">🍤 Chili Garlic Prawn Bowl</div>
+            <div class="time">⏱️ 2 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 468 kcal</span>
+            <span class="chip p">💪 37P</span>
+            <span class="chip f">🧈 11F</span>
+            <span class="chip c">🍚 52C</span>
+          </div>
+        </a>
+
+        <a class="card" href="creamy-nandos-pasta.html">
+          <div class="topline">
+            <div class="title">🍝 Creamy Nando’s Pasta</div>
+            <div class="time">⏱️ 35 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 417 kcal</span>
+            <span class="chip p">💪 50P</span>
+            <span class="chip f">🧈 4F</span>
+            <span class="chip c">🍚 44C</span>
+          </div>
+        </a>
+
+        <a class="card" href="hoisin-beef-noodles-4-servings.html">
+          <div class="topline">
+            <div class="title">🍜 Hoisin Beef Noodles</div>
+            <div class="time">⏱️ 6 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 323 kcal</span>
+            <span class="chip p">💪 32P</span>
+            <span class="chip f">🧈 10F</span>
+            <span class="chip c">🍚 17C</span>
+          </div>
+        </a>
+
+        <a class="card" href="kung-pao-chicken-5-servings.html">
+          <div class="topline">
+            <div class="title">🥡 Kung Pao Chicken</div>
+            <div class="time">⏱️ 30 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 340 kcal</span>
+            <span class="chip p">💪 32P</span>
+            <span class="chip f">🧈 6F</span>
+            <span class="chip c">🍚 35C</span>
+          </div>
+        </a>
+
+        <a class="card" href="mac-and-cheese.html">
+          <div class="topline">
+            <div class="title">🧀 Mac & Cheese</div>
+            <div class="time">⏱️ 35 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 485 kcal</span>
+            <span class="chip p">💪 44P</span>
+            <span class="chip f">🧈 16F</span>
+            <span class="chip c">🍚 47C</span>
+          </div>
+        </a>
+
+        <a class="card" href="meatball-pasta-bake-4-servings.html">
+          <div class="topline">
+            <div class="title">🍝 Meatball Pasta Bake</div>
+            <div class="time">⏱️ 25 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 454 kcal</span>
+            <span class="chip p">💪 50P</span>
+            <span class="chip f">🧈 10F</span>
+            <span class="chip c">🍚 38C</span>
+          </div>
+        </a>
+
+        <a class="card" href="miso-chicken-rice-bowl-makes-5-serves.html">
+          <div class="topline">
+            <div class="title">🍚 Miso Chicken Rice Bowl</div>
+            <div class="time">⏱️ 30 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 570 kcal</span>
+            <span class="chip p">💪 55P</span>
+            <span class="chip f">🧈 12F</span>
+            <span class="chip c">🍚 57C</span>
+          </div>
+        </a>
+
+        <a class="card" href="teriyaki-chicken-bowl.html">
+          <div class="topline">
+            <div class="title">🍱 Teriyaki Chicken Bowl</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 464 kcal</span>
+            <span class="chip p">💪 40P</span>
+            <span class="chip f">🧈 10F</span>
+            <span class="chip c">🍚 47C</span>
+          </div>
+        </a>
+
+        <a class="card" href="vietnamese-beef-salad-serves-4.html">
+          <div class="topline">
+            <div class="title">🇻🇳 Vietnamese Beef Salad</div>
+            <div class="time">⏱️ 30 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 396 kcal</span>
+            <span class="chip p">💪 32P</span>
+            <span class="chip f">🧈 11F</span>
+            <span class="chip c">🍚 38C</span>
+          </div>
+        </a>
+      </div>
+      <div class="hint">Tip: hover a card for a tiny lift effect.</div>
+    </section>
+
+    <!-- Dinner -->
+    <section class="section">
+      <h2>🍽️ Dinner</h2>
+      <div class="grid">
+        <a class="card" href="anabolic-parmy.html">
+          <div class="topline">
+            <div class="title">🍗 Anabolic Parmy</div>
+            <div class="time">⏱️ 20 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 378 kcal</span>
+            <span class="chip p">💪 54P</span>
+            <span class="chip f">🧈 7F</span>
+            <span class="chip c">🍚 53C</span>
+          </div>
+        </a>
+
+        <a class="card" href="bbq-meat-lovers-pizza.html">
+          <div class="topline">
+            <div class="title">🍕 BBQ Meat Lovers Pizza</div>
+            <div class="time">⏱️ 5 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 490 kcal</span>
+            <span class="chip p">💪 41P</span>
+            <span class="chip f">🧈 15F</span>
+            <span class="chip c">🍚 44C</span>
+          </div>
+        </a>
+
+        <a class="card" href="beef-nachos.html">
+          <div class="topline">
+            <div class="title">🌮 Beef Nachos</div>
+            <div class="time">⏱️ 3 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 491 kcal</span>
+            <span class="chip p">💪 49P</span>
+            <span class="chip f">🧈 6F</span>
+            <span class="chip c">🍚 53C</span>
+          </div>
+        </a>
+
+        <a class="card" href="chicken-gyros.html">
+          <div class="topline">
+            <div class="title">🥙 Chicken Gyros</div>
+            <div class="time">⏱️ 17 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 491 kcal</span>
+            <span class="chip p">💪 49P</span>
+            <span class="chip f">🧈 6F</span>
+            <span class="chip c">🍚 53C</span>
+          </div>
+        </a>
+
+        <a class="card" href="greek-turkey-burger.html">
+          <div class="topline">
+            <div class="title">🇬🇷 Greek Turkey Burger</div>
+            <div class="time">⏱️ 20 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 349 kcal</span>
+            <span class="chip p">💪 40P</span>
+            <span class="chip f">🧈 5F</span>
+            <span class="chip c">🍚 32C</span>
+          </div>
+        </a>
+
+        <a class="card" href="haloumi-and-roast-pumpkin-salad.html">
+          <div class="topline">
+            <div class="title">🥗 Haloumi & Roast Pumpkin Salad</div>
+            <div class="time">⏱️ 20 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 395 kcal</span>
+            <span class="chip p">💪 15P</span>
+            <span class="chip f">🧈 23F</span>
+            <span class="chip c">🍚 37C</span>
+          </div>
+        </a>
+
+        <a class="card" href="loaded-sweet-potatoes-per-serve-makes-4.html">
+          <div class="topline">
+            <div class="title">🍠 Loaded Sweet Potatoes</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 356 kcal</span>
+            <span class="chip p">💪 33P</span>
+            <span class="chip f">🧈 13F</span>
+            <span class="chip c">🍚 26C</span>
+          </div>
+        </a>
+
+        <a class="card" href="sticky-bbq-chicken.html">
+          <div class="topline">
+            <div class="title">🍖 Sticky BBQ Chicken</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 391 kcal</span>
+            <span class="chip p">💪 50P</span>
+            <span class="chip f">🧈 6F</span>
+            <span class="chip c">🍚 29C</span>
+          </div>
+        </a>
+
+        <a class="card" href="teriyaki-salmon-bites.html">
+          <div class="topline">
+            <div class="title">🐟 Teriyaki Salmon Bites</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 456 kcal</span>
+            <span class="chip p">💪 32P</span>
+            <span class="chip f">🧈 19F</span>
+            <span class="chip c">🍚 34C</span>
+          </div>
+        </a>
+
+        <a class="card" href="the-buff-mac.html">
+          <div class="topline">
+            <div class="title">💪 The Buff Mac</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 435 kcal</span>
+            <span class="chip p">💪 47P</span>
+            <span class="chip f">🧈 14F</span>
+            <span class="chip c">🍚 25C</span>
+          </div>
+        </a>
+
+        <a class="card" href="vermicelli-chicken-noodle-salad.html">
+          <div class="topline">
+            <div class="title">🥗 Vermicelli Chicken Noodle Salad</div>
+            <div class="time">⏱️ 30 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 477 kcal</span>
+            <span class="chip p">💪 27P</span>
+            <span class="chip f">🧈 6F</span>
+            <span class="chip c">🍚 72C</span>
+          </div>
+        </a>
+
+        <a class="card" href="weeknight-potato-gnocci.html">
+          <div class="topline">
+            <div class="title">🥔 Weeknight Potato Gnocchi</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 482 kcal</span>
+            <span class="chip p">💪 15P</span>
+            <span class="chip f">🧈 13F</span>
+            <span class="chip c">🍚 76C</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Dessert -->
+    <section class="section">
+      <h2>🍰 Dessert</h2>
+      <div class="grid">
+        <a class="card" href="biscoff-lava-cake.html">
+          <div class="topline">
+            <div class="title">🍰 Biscoff Lava Cake</div>
+            <div class="time">⏱️ 2 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 379 kcal</span>
+            <span class="chip p">💪 36P</span>
+            <span class="chip f">🧈 12F</span>
+            <span class="chip c">🍚 33C</span>
+          </div>
+        </a>
+
+        <a class="card" href="cadbury-skillet-cookie.html">
+          <div class="topline">
+            <div class="title">🍪 Cadbury Skillet Cookie</div>
+            <div class="time">⏱️ 14 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 260 kcal</span>
+            <span class="chip p">💪 6P</span>
+            <span class="chip f">🧈 13F</span>
+            <span class="chip c">🍚 32C</span>
+          </div>
+        </a>
+
+        <a class="card" href="chocolate-chunk-sundae.html">
+          <div class="topline">
+            <div class="title">🍨 Chocolate Chunk Sundae</div>
+            <div class="time">⏱️ 3 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 395 kcal</span>
+            <span class="chip p">💪 15P</span>
+            <span class="chip f">🧈 23F</span>
+            <span class="chip c">🍚 37C</span>
+          </div>
+        </a>
+
+        <a class="card" href="chocolate-crepes.html">
+          <div class="topline">
+            <div class="title">🥞 Chocolate Crêpes</div>
+            <div class="time">⏱️ 5 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 397 kcal</span>
+            <span class="chip p">💪 38P</span>
+            <span class="chip f">🧈 10F</span>
+            <span class="chip c">🍚 37C</span>
+          </div>
+        </a>
+
+        <a class="card" href="mini-apple-crumble.html">
+          <div class="topline">
+            <div class="title">🍎 Mini Apple Crumble</div>
+            <div class="time">⏱️ 30 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 120 kcal</span>
+            <span class="chip p">💪 1P</span>
+            <span class="chip f">🧈 2F</span>
+            <span class="chip c">🍚 27C</span>
+          </div>
+        </a>
+
+        <a class="card" href="nutella-donuts-6-servings-per-serve.html">
+          <div class="topline">
+            <div class="title">🍩 Nutella Donuts</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 126 kcal</span>
+            <span class="chip p">💪 4P</span>
+            <span class="chip f">🧈 6F</span>
+            <span class="chip c">🍚 13C</span>
+          </div>
+        </a>
+
+        <a class="card" href="nutella-protein-balls-9-servings-per-serve.html">
+          <div class="topline">
+            <div class="title">⚡ Nutella Protein Balls</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 103 kcal</span>
+            <span class="chip p">💪 7P</span>
+            <span class="chip f">🧈 4F</span>
+            <span class="chip c">🍚 8C</span>
+          </div>
+        </a>
+
+        <a class="card" href="oreo-protein-shake.html">
+          <div class="topline">
+            <div class="title">🥤 Oreo Protein Shake</div>
+            <div class="time">⏱️ 2 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 305 kcal</span>
+            <span class="chip p">💪 35P</span>
+            <span class="chip f">🧈 9F</span>
+            <span class="chip c">🍚 35C</span>
+          </div>
+        </a>
+
+        <a class="card" href="pb-and-j-toasted-sanga.html">
+          <div class="topline">
+            <div class="title">🥜 PB & J Toasted Sanga</div>
+            <div class="time">⏱️ 5 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 340 kcal</span>
+            <span class="chip p">💪 24P</span>
+            <span class="chip f">🧈 7F</span>
+            <span class="chip c">🍚 48C</span>
+          </div>
+        </a>
+
+        <a class="card" href="protein-iced-coffee.html">
+          <div class="topline">
+            <div class="title">☕ Protein Iced Coffee</div>
+            <div class="time">⏱️ 5 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 138 kcal</span>
+            <span class="chip p">💪 26P</span>
+            <span class="chip f">🧈 2F</span>
+            <span class="chip c">🍚 4C</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 15 minutes or less -->
+    <section class="section">
+      <h2>⚡ 15 minutes or less</h2>
+      <div class="grid">
+        <a class="card" href="balsamic-chicken-sanga.html">
+          <div class="topline">
+            <div class="title">🥪 Balsamic Chicken Sanga</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 483 kcal</span>
+            <span class="chip p">💪 44P</span>
+            <span class="chip f">🧈 14F</span>
+            <span class="chip c">🍚 46C</span>
+          </div>
+        </a>
+
+        <a class="card" href="cheesy-brekky-burger.html">
+          <div class="topline">
+            <div class="title">🧀 Cheesy Brekky Burger</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 422 kcal</span>
+            <span class="chip p">💪 39P</span>
+            <span class="chip f">🧈 13F</span>
+            <span class="chip c">🍚 26C</span>
+          </div>
+        </a>
+
+        <a class="card" href="chicken-parmy-sanga.html">
+          <div class="topline">
+            <div class="title">🥪 Chicken Parmy Sanga</div>
+            <div class="time">⏱️ 20 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 670 kcal</span>
+            <span class="chip p">💪 67P</span>
+            <span class="chip f">🧈 16F</span>
+            <span class="chip c">🍚 55C</span>
+          </div>
+        </a>
+
+        <a class="card" href="chipotle-queso-loaded-fries.html">
+          <div class="topline">
+            <div class="title">🍟 Chipotle Queso Loaded Fries</div>
+            <div class="time">⏱️ 15 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 675 kcal</span>
+            <span class="chip p">💪 42P</span>
+            <span class="chip f">🧈 42F</span>
+            <span class="chip c">🍚 36C</span>
+          </div>
+        </a>
+
+        <a class="card" href="double-smash-burger.html">
+          <div class="topline">
+            <div class="title">🍔 Double Smash Burger</div>
+            <div class="time">⏱️ 20 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 670 kcal</span>
+            <span class="chip p">💪 67P</span>
+            <span class="chip f">🧈 16F</span>
+            <span class="chip c">🍚 55C</span>
+          </div>
+        </a>
+
+        <a class="card" href="folded-omelette-bagel.html">
+          <div class="topline">
+            <div class="title">🥯 Folded Omelette Bagel</div>
+            <div class="time">⏱️ 20 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 571 kcal</span>
+            <span class="chip p">💪 45P</span>
+            <span class="chip f">🧈 19F</span>
+            <span class="chip c">🍚 54C</span>
+          </div>
+        </a>
+
+        <a class="card" href="kfc-zinger-stacker.html">
+          <div class="topline">
+            <div class="title">🔥 KFC Zinger Stacker</div>
+            <div class="time">⏱️ 18 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 582 kcal</span>
+            <span class="chip p">💪 78P</span>
+            <span class="chip f">🧈 11F</span>
+            <span class="chip c">🍚 51C</span>
+          </div>
+        </a>
+
+        <a class="card" href="lazy-parmy-sanga.html">
+          <div class="topline">
+            <div class="title">😌 Lazy Parmy Sanga</div>
+            <div class="time">⏱️ 6 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 445 kcal</span>
+            <span class="chip p">💪 38P</span>
+            <span class="chip f">🧈 20F</span>
+            <span class="chip c">🍚 26C</span>
+          </div>
+        </a>
+
+        <a class="card" href="philly-cheese-steak.html">
+          <div class="topline">
+            <div class="title">🥩 Philly Cheese Steak</div>
+            <div class="time">⏱️ 10 min</div>
+          </div>
+          <div class="meta">
+            <span class="chip kcal">🔥 739 kcal</span>
+            <span class="chip p">💪 49P</span>
+            <span class="chip f">🧈 38F</span>
+            <span class="chip c">🍚 49C</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
